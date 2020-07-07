@@ -1,4 +1,6 @@
 package fa.training.restful.entity;
+import java.time.LocalTime;
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue; 
 import javax.persistence.GenerationType; 
@@ -12,6 +14,10 @@ public class User {
 	private long id;
 	private String username;
 	private String password;
+	private String email;
+	
+	private String information;
+	private LocalTime date;
 	public long getId() { return id;
 	}
 	public void setId(long id) {
